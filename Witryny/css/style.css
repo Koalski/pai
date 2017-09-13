@@ -1,0 +1,14 @@
+body
+{
+    background-color: #eee;
+	font-family: 'Halvetica-new';
+}
+input{
+	width: 200px;
+}
+button{
+	width: 204px;
+}
+[type=color]{
+	width: 198px;
+}
