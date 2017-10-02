@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierwsze zaję,cia</title>
+    <title>Zdarzenia</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css1.css">
 </head>
-<body>
-    <form>
-    Podaj wysokość: <input type="number" name='h'> <br>
-    Podaj średnice: <input type="number" name='r'> <br>
-    <input type='radio' name='d' value="Obwód"> Obwód <br>
-    <input type='radio' name='d' value="Pole"> Pole <br>
-    <input type='radio' name='d' value="Objętość"> Objętość <br>
-    <input type="submit" value="Submit" onclick=stozek()>
+    <fieldset>
+        <legend>Rejestracja</legend>
+        <form>
+            <div id="komunikat"></div><br>
+            <input type="text" id="imie" placeholder="Imię" autofocus><br><br>
+            <input type="text" id="nazwisko" placeholder="Nazwisko"><br><br>
+            <input type="text" id="login" placeholder="Login"><br><br>
+            <input type="text" id="mail1" placeholder="Adres poczty"><br><br>
+            <input type="text" id="mail2" placeholder="Powtórz adres poczty" disabled><br><br>
+            <input type="password" id="pass1" placeholder="Podaj hasło"><br><br>
+            <input type="password" id="pass2" placeholder="Powtórz hasło" disabled><br><br>
+            Podaj datę urodzin: <input type="date" id="data"><br><br>
+            <input type="checkbox" id="regulamin"> Zatwierdź regulamin<br><br>
 
-    </form>
 
-    <script src="ind.js"></script>
+        </form>
+        <button id="przycisk" disabled>Wyślij</button>
+        <button id="popraw">Popraw</button>
+    </fieldset>
+<script src="zdarzeniaRegEx.js"></script>
 </body>
 </html>
